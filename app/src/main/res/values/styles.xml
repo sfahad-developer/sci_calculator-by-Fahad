@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Base calculator button -->
+    <style
+        name="CalcBaseButton"
+        parent="android:style/Widget.Material.Button">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:layout_margin">3dp</item>
+
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+
+        <!-- IMPORTANT: Remove Android's default purple tint -->
+
+        <!-- Remove Material button insets -->
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+
+        <item name="android:paddingStart">2dp</item>
+        <item name="android:paddingEnd">2dp</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:fontFamily">sans</item>
+
+        <item name="android:textAllCaps">false</item>
+
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+
+    <!-- NUMBER BUTTON -->
+    <style
+        name="CalcNumberButton"
+        parent="CalcBaseButton">
+
+        <item name="android:background">@drawable/number_button</item>
+
+    </style>
+
+
+    <!-- SCIENTIFIC BUTTON -->
+    <style
+        name="CalcScientificButton"
+        parent="CalcBaseButton">
+
+        <item name="android:textSize">12sp</item>
+
+        <item name="android:background">@drawable/scientific_button</item>
+
+    </style>
+
+
+    <!-- ACTION BUTTON -->
+    <style
+        name="CalcActionButton"
+        parent="CalcBaseButton">
+
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:background">@drawable/action_button</item>
+
+    </style>
+
+
+    <!-- OPERATOR BUTTON -->
+    <style
+        name="CalcOperatorButton"
+        parent="CalcBaseButton">
+
+        <item name="android:textSize">20sp</item>
+
+        <item name="android:background">@drawable/operator_button</item>
+
+    </style>
+
+
+    <!-- EQUAL BUTTON -->
+    <style
+        name="CalcEqualsButton"
+        parent="CalcBaseButton">
+
+        <item name="android:textSize">20sp</item>
+
+        <item name="android:textColor">#111111</item>
+
+        <item name="android:background">@drawable/equal_button</item>
+
+    </style>
+
+</resources>
